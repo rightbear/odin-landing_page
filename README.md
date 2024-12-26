@@ -1,2 +1,4 @@
 # odin-landing_page
-About Practice of "Landing Page" in The Odin Project
+Project: Landing Page
+
+This is the second project to work after finishing the "Flexbox"

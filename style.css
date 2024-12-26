@@ -1,0 +1,192 @@
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    overflow: hidden;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+/****************/
+
+.header {
+    height: 72px;
+    background: #1F2937;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px
+}
+
+/****************/
+
+.content,
+a {
+    color: #E5E7E8;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.description {
+    flex: 1;
+    background: #1F2937;
+    padding: 16px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px
+}
+
+.big-pic img {
+    height: 250px;
+    width: auto;
+
+    color: white;
+    background-color: grey;
+}
+
+.text > * {
+    margin: 9px;
+}
+
+.main {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+button {
+    cursor: pointer;
+    padding: 6px 20px;
+    border-radius: 8px;
+    font-weight: 900;
+}
+
+.description .text .sign {
+    background: #3882F6;
+    border: 1px solid #3882F6;
+    color: white;
+}
+
+/****************/
+
+.info {
+    flex: 1;
+    background: white;
+    text-align: center;
+    padding: 30px 60px;
+}
+
+.info .title {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    margin-bottom: 32px;
+}
+
+.info .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.example {
+    max-width: 200px;
+}
+
+.example img {
+    width: auto;
+    height: 100px;
+}
+
+.example .text {
+    color: grey;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/**************/
+
+.quote {
+    flex: 1;
+
+    padding: 50px 100px;
+    background: #E5E7E8;
+    color: #1F2937;
+}
+
+.quote .text {
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+.quote .author {
+    font-weight: 900;
+    text-align: end;
+    margin: 20px;
+}
+
+/****************/
+
+.call {
+    flex: 1;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call .background {
+    background: #3882F6;
+    border-radius: 10px;
+    padding: 30px 50px;
+    margin: 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.background .text {
+    color: white;
+}
+
+.background .sign {
+    background: #3882F6;
+    border: 1px solid white;
+    color: white;
+}
+
+/****************/
+
+.footer {
+    height: 72px;
+    background: #1F2937;
+    color: #E5E7E8;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
