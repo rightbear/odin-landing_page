@@ -64,8 +64,8 @@ body {
     justify-content: center;
     align-items: start;
 
-    /*You can also write width: 50%*/
-    flex-basis: 50%;
+    /*You can also write width: 55%*/
+    flex-basis: 55%;
 }
 
 .left-text > * {
@@ -78,8 +78,8 @@ body {
     justify-content: center;
     align-items: end;
 
-    /*You can also write width: 50%*/
-    flex-basis: 50%;
+    /*You can also write width: 45%*/
+    flex-basis: 45%;
 }
 
 
