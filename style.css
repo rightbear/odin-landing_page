@@ -4,9 +4,6 @@ body {
     overflow: hidden;
     min-height: 100vh;
 
-    display: flex;
-    flex-direction: column;
-
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
@@ -18,44 +15,75 @@ body {
     background: #1F2937;
     padding: 0 100px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.logo {
+#left-logo, .right-links {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+#left-logo {
     font-size: 24px;
     color: #F9FAF8;
     font-weight: 900;
+    justify-content: start;
 }
 
-.header ul {
+.right-links {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 16px
+    justify-content: end;
+    gap: 16px;
 }
 
-/****************/
-
-.content,
-a {
+.header-link {
     color: #E5E7E8;
     text-decoration: none;
     font-size: 18px;
 }
 
+/****************/
+
 .description {
     flex: 1;
-    background: #1F2937;
-    padding: 16px 100px;
+
     display: flex;
-    justify-content: center;
+    background: #1F2937;
+    padding: 50px 100px;
+    /*
     align-items: center;
-    gap: 40px
+    */
 }
 
-.big-pic img {
+.left-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    /*You can also write width: 50%*/
+    flex-basis: 50%;
+}
+
+.left-text > * {
+    margin: 5px;
+}
+
+.right-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+
+    /*You can also write width: 50%*/
+    flex-basis: 50%;
+}
+
+
+.right-image img {
     height: 250px;
     width: auto;
 
@@ -63,14 +91,16 @@ a {
     background-color: grey;
 }
 
-.text > * {
-    margin: 9px;
-}
-
 .main {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
+}
+
+.content {
+    color: #E5E7E8;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 button {
@@ -80,7 +110,7 @@ button {
     font-weight: 900;
 }
 
-.description .text .sign {
+.description .left-text .sign {
     background: #3882F6;
     border: 1px solid #3882F6;
     color: white;
@@ -92,14 +122,7 @@ button {
     flex: 1;
     background: white;
     text-align: center;
-    padding: 30px 60px;
-}
-
-.info .title {
-    font-size: 36px;
-    color: #1F2937;
-    font-weight: 900;
-    margin-bottom: 32px;
+    padding: 50px 60px;
 }
 
 .info .container {
@@ -109,18 +132,39 @@ button {
     gap: 30px;
 }
 
+.info .title {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    margin-top: 0px;
+    margin-bottom: 32px;
+}
+
 .example {
+    display: flex;
+    flex-direction: column;
     max-width: 200px;
+}
+
+.box-blue {
+    border: 5px solid #3882F6;
+    padding: 10px;
+    border-radius: 15px;
+    width: 120px;
+    height: 120px;
+    align-self: center;
 }
 
 .example img {
     width: auto;
-    height: 100px;
+    height: auto;
 }
 
 .example .text {
     color: grey;
     text-decoration: none;
+    text-align: center;
+    margin-top: 5px;
     font-size: 18px;
 }
 
@@ -136,7 +180,7 @@ button {
 
 .quote .text {
     font-size: 36px;
-    font-weight: 100;
+    font-weight: lighter;
     font-style: italic;
     margin-top: 50px;
 }
@@ -144,7 +188,7 @@ button {
 .quote .author {
     font-weight: 900;
     text-align: end;
-    margin: 20px;
+    margin-right: 10px;
 }
 
 /****************/
@@ -160,16 +204,29 @@ button {
 .call .background {
     background: #3882F6;
     border-radius: 10px;
-    padding: 30px 50px;
-    margin: 40px 40px;
+    padding: 20px 50px;
+    margin: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 100px;
 }
 
 .background .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text .line-one {
+    font-weight: bold;
+    font-size: 20px;
     color: white;
+    margin-bottom: 0px;
+}
+
+.text .line-two {
+    margin-top: 5px;
+    color: #E5E7E8;
 }
 
 .background .sign {
